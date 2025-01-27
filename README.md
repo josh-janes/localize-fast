@@ -6,7 +6,6 @@ A command-line tool to translate text files while preserving directory structure
 
 Translates files in a directory while maintaining folder structure. Features:
 - Mirror directory structure with translated content
-- HTML-aware translation preserving markup
 - Progress UI with colored status updates
 - Chunked translation for large files
 - Supports any language supported by Ollama models
@@ -24,17 +23,17 @@ Translates files in a directory while maintaining folder structure. Features:
 
 ## Mac
 
-# Install Python if needed
+### Install Python if needed
 ```brew install python```
-# Start Ollama
+### Start Ollama
 ```ollama serve```
 
 ## Linux
 
-# Install Python
+### Install Python
 ```sudo apt-get install python3 python3-pip```
 
-# Start Ollama (systemd example)
+### Start Ollama (systemd example)
 ```systemctl start ollama```
 
 ## Windows
@@ -53,7 +52,7 @@ ollama serve
 
 ```python localizefast.py [source_dir] [input_lang] [output_lang] [output_base] [options]```
 
-# Example: Translate docs to Spanish
+### Example: Translate docs to Spanish
 ```python localizefast.py ./documents en es ./translations --model llama2```
 
 Options:
@@ -74,12 +73,12 @@ Ollama Connection Issues
 bash
 Copy
 
-# Verify Ollama is running
+### Verify Ollama is running
 curl http://localhost:11434
 
-# Expected response: "Ollama is running"
+### Expected response: "Ollama is running"
 
-# Model Not Found
+### Model Not Found
 
 Download required model
 ```ollama pull llama2```
