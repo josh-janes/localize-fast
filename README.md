@@ -46,7 +46,7 @@ Run in PowerShell:
 
 ```pip install requests beautifulsoup4 colorama```
 
-ollama serve
+```ollama run```
 
 ## Basic Usage
 
@@ -62,23 +62,22 @@ Options:
     --chunk-size: Set max characters per chunk (default: 4000)
 
 Output Structure:
-Copy
 
+```
 translations/
 └── es/
     └── [mirrored source structure]
-
+```
 ## Troubleshooting
-Ollama Connection Issues
-bash
-Copy
 
-### Verify Ollama is running
+### Ollama Connection Issues
+
+#### Verify Ollama is running
 curl http://localhost:11434
 
-### Expected response: "Ollama is running"
+#### Expected response: "Ollama is running"
 
-### Model Not Found
+#### Model Not Found
 
 Download required model
 ```ollama pull llama2```
