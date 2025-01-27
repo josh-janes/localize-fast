@@ -57,9 +57,9 @@ Run in PowerShell:
 
 Options:
 
-    --model: Specify Ollama model (default: llama2)
+--model: Specify Ollama model (default: llama2)
 
-    --chunk-size: Set max characters per chunk (default: 4000)
+--chunk-size: Set max characters per chunk (default: 4000)
 
 Output Structure:
 
@@ -80,19 +80,19 @@ curl http://localhost:11434
 #### Model Not Found
 
 Download required model
-```ollama pull llama2```
+    ```ollama pull llama2```
 
-File Permission Errors
+#### File Permission Errors
 
-    On Linux/Mac: Use sudo for system-wide installs
+On Linux/Mac: Use sudo for system-wide installs
 
-    On Windows: Run PowerShell as Administrator
+On Windows: Run PowerShell as Administrator
 
-Incomplete Translations
+#### Incomplete Translations
 
-    Reduce chunk size: --chunk-size 2000
+Reduce chunk size: --chunk-size 2000
 
-    Check model documentation for token limits
+Check model documentation for token limits
 
 
 Note: Always keep the Ollama server running during translations. Monitor system resources when processing large directories.
