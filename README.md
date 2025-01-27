@@ -1,6 +1,6 @@
 # localizefast: CLI Translation Utility
 
-A command-line tool to translate text files (.txt/.html) while preserving directory structure using Ollama's local AI models.
+A command-line tool to translate text files while preserving directory structure using Ollama's local AI models.
 
 ## Description
 
